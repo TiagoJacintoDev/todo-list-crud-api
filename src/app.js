@@ -7,6 +7,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use("/api/lists", require("./routes/listRoutes"));
+app.use("/api/tasks", require("./routes/taskRoutes"));
 
 app.use(require("./middleware/errorHandler"));
 
